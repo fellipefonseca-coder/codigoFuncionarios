@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Gerente g = new Gerente("Carlos", 5000);
+        Estagiario e = new Estagiario("Ana", 1500);
+
+        System.out.println("Salário Gerente: " + g.calcularSalario());
+        System.out.println("Salário Estagiário: " + e.calcularSalario());
+
+        System.out.println("Salário Gerente com bônus: " + g.calcularSalario(1000));
+        System.out.println("Salário Estagiário com bônus: " + e.calcularSalario(300));
+    }
+}
