@@ -1,0 +1,16 @@
+class Gerente extends Funcionario {
+
+    public Gerente(String nome, double salario) {
+        super(nome, salario);
+    }
+
+    @Override
+    public double calcularSalario() {
+        return salario + 2000;
+    }
+
+    @Override
+    public double calcularSalario(double bonus) {
+        return salario + bonus + 2000;
+    }
+}
